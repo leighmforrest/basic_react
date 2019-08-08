@@ -25,8 +25,6 @@ function reducer(state = initialState, action) {
 }
 
 const store = createStore(reducer);
-console.log("created", store.getState());
-store.dispatch({ type: "INCREMENT" });
 
 const App = () => (
   <Provider store={store}>
